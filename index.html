@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MagsMen</title>
+  <meta name="description" content="A buttery-smooth single-page template for MagsMen with sleek animations and micro-interactions.">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <ul class="list-items">
+      <li data-target="hero" class="active">Home</li>
+      <li data-target="expertise">Expertise</li>
+      <li data-target="contact">Contact</li>
+    </ul>
+  </nav>
+
+  <!-- decorative floating blob -->
+  <svg class="float-accent" width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.35"/><stop offset="1" stop-color="#00e0d8" stop-opacity="0.18"/></linearGradient></defs>
+    <path d="M50 10 C120 -20 300 -10 370 30 C450 80 410 210 340 300 C270 390 80 420 20 340 C-40 260 -20 70 50 10Z" fill="url(#g)"/>
+  </svg>
+
+  <main>
+    <header id="hero" class="hero">
+      <div class="intro">
+        <div class="eyebrow">MagsMen</div>
+        <h1 class="shimmer">Brand Consultancy Firm</h1>
+        <p class="lead">A single-page demo with layered glass, micro-interactions, subtle motion and accessible animation patterns. Built to be fast and gorgeous.</p>
+
+        <div class="cta-row">
+          <button class="btn btn-primary" id="hireBtn">Let's build</button>
+          <button class="btn btn-ghost" id="exploreBtn">Explore work</button>
+        </div>
+      </div>
+
+      <aside class="card reveal">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <div style="font-weight:800">Live Preview</div>
+          <div style="font-size:13px;color:var(--muted)">v1.0</div>
+        </div>
+        <div class="preview">Interactive preview panel</div>
+        <div style="display:flex;gap:8px;margin-top:12px;justify-content:space-between;align-items:center">
+          <div style="font-size:13px;color:var(--muted)">Animations: float, reveal, shimmer</div>
+          <div style="display:flex;gap:8px">
+            <div style="width:36px;height:36px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#6dd6ff);display:flex;align-items:center;justify-content:center;font-weight:700">M</div>
+            <div style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center">•</div>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <section id="expertise">
+      <h2>Expertise</h2>
+      <p class="lead">Corporate Rebranding, Brand Creation, Link Fluence, LaunchPad.</p>
+      <div class="grid" style="margin-top:16px">
+        <div class="service reveal">
+          <h3>Brand Consulting</h3>
+          <p class="muted">We work with brands as a true strategic partner, applying rigorous standards and creative ingenuity to build it up.</p>
+        </div>
+        <div class="service reveal">
+          <h3>Image Consulting</h3>
+          <p class="muted">Explore and learn about your own power of image and style, leverage it to the best use, while having fun doing it.</p>
+        </div>
+        <div class="service reveal">
+          <h3>Brand Expresso</h3>
+          <p class="muted">Revitalize your brand in just 90 days with Brand Expresso—transforming identity, boosting presence, and standing out boldly in the market!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+      
+          <div class="office">
+            <h3>Head Office</h3>
+            <p>4th floor, Icon Spaces 5-98-57/5,<br>
+            6th Lane, Brodipet, Beside Brodipet Police Station,<br>
+            Guntur, Andhra Pradesh – 522002</p>
+            <p><strong>Phone:</strong> +91 90449 10449</p>
+            <p><strong>Email:</strong> connect@magsmen.com</p>
+          </div>
+      
+          <div class="office">
+            <h3>Corporate Office</h3>
+            <p>Metro Pillar No. C1762, 3rd Floor,<br>
+            Plot No. 23, H.No. 1/90/2/A/23,<br>
+            Near Image Hospital, Silicon Valley, Madhapur,<br>
+            Hyderabad, Telangana – 500081</p>
+            <p><strong>Phone:</strong> +91 90449 10449</p>
+            <p><strong>Email:</strong> connect@magsmen.com</p>
+          </div>
+      
+          <div class="office">
+            <h3>Australia Office</h3>
+            <p>1/9, Fifth Avenue, Rowville,<br>
+            VIC, Australia – 3178</p>
+            <p><strong>Phone:</strong> +61 406 017 663</p>
+            <p><strong>Email:</strong> connect@magsmen.com.au</p>
+          </div>
+      
+        </div>
+      </section>
+      
+
+    <footer>
+      <small>© <span id="year"></span> MagsMen — </small>
+    </footer>
+  </main>
+
+  <!-- External JS -->
+  <script src="main.js"></script>
+</body>
+</html>
