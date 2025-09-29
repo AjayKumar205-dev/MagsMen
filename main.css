@@ -361,4 +361,31 @@
     object-fit: cover;
     border-radius: 12px;
   }
-  
+  /* Fixed Logos at Top Corners with Blend */
+.logo-left, .logo-right {
+   
+    top: 16px;
+    width: 260px;        /* adjust size */
+    height: auto;
+    z-index: 100;
+    
+    /* Blending with background */
+    opacity: 0.7;                /* slightly transparent */
+    mix-blend-mode: lighten;      /* blends with underlying content */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.logo-left {
+    left: 16px;
+}
+
+.logo-right {
+    right: 16px;
+}
+
+/* Optional subtle hover effect */
+.logo-left:hover, .logo-right:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
